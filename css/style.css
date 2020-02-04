@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url(../css/iconos.css);
+/* Comentarios acerca del CSS
+- Todas las etiquetas están ordenadas por orden alfabético
+*/
+body {
+  margin: 0;
+  background-color: #F4F4F4; }
+
+.logo {
+  background-color: red;
+  display: flex;
+  justify-content: space-between; }
+  .logo img {
+    min-height: 100px;
+    min-width: 300px; }
+  .logo a {
+    align-self: center;
+    margin-left: 2em; }
+
+.partederecha {
+  align-self: center;
+  margin-right: 2em; }
+
+.menu {
+  background-color: white;
+  display: flex; }
+  .menu a {
+    padding: 0.3em 1.2em; }
+    .menu a:hover {
+      border: 1px solid black;
+      background-color: red; }
+  .menu li {
+    display: inline-block;
+    margin: 1em; }
+
+a {
+  text-decoration: none;
+  font-size: 2em; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%; }
+  section h2 {
+    font-size: 2em;
+    font-weight: normal; }
+  section img {
+    width: 100%; }
+  section h3 {
+    padding-top: 1em;
+    margin: 0.5em 1em; }
+  section p {
+    font-size: 1.2em;
+    overflow-wrap: break-word;
+    margin: 0.5em 1em; }
+  section a {
+    text-align: center; }
+  section .contactar {
+    align-self: center; }
+  section .cuadro {
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column; }
+
+.principal {
+  display: flex;
+  width: 70%;
+  margin: 0 auto; }
+
+aside {
+  width: 30%;
+  height: 30%; }
+  aside video {
+    width: 300px;
+    height: 300px; }
