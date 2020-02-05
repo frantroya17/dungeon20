@@ -41,11 +41,11 @@ a {
 section {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  width: 60%; }
+  width: 45%; }
   section h2 {
     font-size: 2em;
-    font-weight: normal; }
+    font-weight: normal;
+    align-self: center; }
   section img {
     width: 100%; }
   section h3 {
@@ -63,7 +63,8 @@ section {
     background-color: white;
     width: 60%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-self: center; }
 
 .principal {
   display: flex;
@@ -71,8 +72,7 @@ section {
   margin: 0 auto; }
 
 aside {
-  width: 30%;
-  height: 30%; }
+  align-self: center;
+  width: 55%; }
   aside video {
-    width: 300px;
-    height: 300px; }
+    width: 100%; }
