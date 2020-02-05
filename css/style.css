@@ -18,8 +18,8 @@ h3 {
   display: flex;
   justify-content: space-between; }
   .logo img {
-    min-height: 100px;
-    min-width: 300px; }
+    max-height: 100px;
+    max-width: 300px; }
   .logo a {
     align-self: center;
     margin-left: 2em; }
@@ -31,19 +31,22 @@ h3 {
 .menu {
   background-color: white;
   display: flex; }
+  .menu ul {
+    margin: 0px; }
   .menu a {
-    padding: 0.3em 1.2em; }
+    padding: 1em; }
     .menu a:hover {
       border: 1px black;
-      border-radius: 6px;
-      background-color: red; }
+      border-radius: 10px;
+      background-color: red;
+      padding: 1em; }
   .menu li {
     display: inline-block;
-    margin: 1em; }
+    margin: 1em 0em; }
 
 a {
   text-decoration: none;
-  font-size: 1.6em; }
+  font-size: 1em; }
 
 section {
   display: flex;
@@ -67,12 +70,13 @@ section {
     text-align: center; }
   section .contactar {
     align-self: center; }
-  section .cuadro {
-    background-color: white;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-self: center; }
+
+.cuadro {
+  background-color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-self: center; }
 
 .principal {
   display: flex;
@@ -91,8 +95,11 @@ aside {
   .principal {
     flex-direction: column; }
   section {
-    width: 100%; }
+    width: 95%;
+    margin: 0px; }
   .cuadro {
     width: 100%; }
   video {
-    align-self: center; } }
+    align-self: center; }
+  aside {
+    width: 100%; } }
