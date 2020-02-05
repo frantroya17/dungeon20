@@ -7,6 +7,12 @@ body {
   margin: 0;
   background-color: #F4F4F4; }
 
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.8em; }
+
 .logo {
   background-color: red;
   display: flex;
@@ -28,7 +34,8 @@ body {
   .menu a {
     padding: 0.3em 1.2em; }
     .menu a:hover {
-      border: 1px solid black;
+      border: 1px black;
+      border-radius: 6px;
       background-color: red; }
   .menu li {
     display: inline-block;
@@ -36,23 +43,24 @@ body {
 
 a {
   text-decoration: none;
-  font-size: 2em; }
+  font-size: 1.6em; }
 
 section {
   display: flex;
   flex-direction: column;
-  width: 45%; }
+  width: 60%; }
   section h2 {
-    font-size: 2em;
     font-weight: normal;
     align-self: center; }
-  section img {
+  section img:first-child {
     width: 100%; }
+  section img:last-child {
+    max-width: 300px; }
   section h3 {
     padding-top: 1em;
     margin: 0.5em 1em; }
   section p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     overflow-wrap: break-word;
     margin: 0.5em 1em; }
   section a {
@@ -61,18 +69,30 @@ section {
     align-self: center; }
   section .cuadro {
     background-color: white;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-self: center; }
 
 .principal {
   display: flex;
-  width: 70%;
+  width: 90%;
   margin: 0 auto; }
 
 aside {
   align-self: center;
-  width: 55%; }
+  width: 40%; }
   aside video {
     width: 100%; }
+
+@media (max-width: 600px) {
+  h3 {
+    overflow-wrap: break-word; }
+  .principal {
+    flex-direction: column; }
+  section {
+    width: 100%; }
+  .cuadro {
+    width: 100%; }
+  video {
+    align-self: center; } }
